@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Data Managment</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+	<div class="jumbotron">
+  <h1>Employee Data Management</h1>
+  <h3>A Comprehensive Directory of Employee Billable Hours</h3>
+	</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">Current Employees</div>
+  <!-- Table -->
+  <table class="table">
+    <tr>
+    	<th>Employee Name</th>
+    	<th>Role</th>
+    	<th>Start Date</th>
+    	<th>Months Worked</th>
+    	<th>Monthly Rate ($)</th>
+    	<th> Total Billed</th>
+    </tr>
+    <tr id="employeeDB">
+    	
+    </tr>
+  </table>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add Employee</h3>
+  </div>
+  <div class="panel-body">
+    <form>
+  <div class="form-group">
+    <label for="employeeName">Employee Name</label>
+    <input type="name" class="form-control" id="nameInput" placeholder="John Smith">
+  </div>
+  <div class="form-group">
+    <label for="role">Role</label>
+    <input type="role" class="form-control" id="roleInput" placeholder="Account Executive">
+  </div> 
+  <div class="form-group">
+    <label for="startDate">Start Date DD/MM/YY - ex: 01/01/89</label>
+    <input type="date" class="form-control" id="dateInput" placeholder="01/01/89">
+  </div> 
+  <div class="form-group">
+    <label for="monthlyRate">Monthly Rate</label>
+    <input type="number" class="form-control" id="rateInput" placeholder="$2000">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>
